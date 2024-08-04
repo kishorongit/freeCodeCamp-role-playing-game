@@ -26,6 +26,21 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
+// Go to town square
+function goTown() {
+    // Update button text
+    button1.innerText = "Go to store";
+    button2.innerText = "Go to cave";
+    button3.innerText = "Fight dragon";
+    
+    // Update onclick method
+    button1.onclick = goStore;
+    button2.onclick = goCave;
+    button3.onclick = fightDragon;
+
+    text.innerText = "You are in the town square. You see a sign that says \"Store\"."
+}
+
 // Go to store
 function goStore() {
     // Update button text
@@ -58,9 +73,4 @@ function buyHealth() {
 // Buy weapon
 function buyWeapon() {
     console.log("Buying weapon.")
-}
-
-// Go to town square
-function goTown() {
-    console.log("Going to town square.")
 }
